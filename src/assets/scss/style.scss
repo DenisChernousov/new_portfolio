@@ -1,0 +1,224 @@
+@import 'reset';
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Mrs+Sheppards&family=Roboto:wght@300;400;700&family=Space+Mono:wght@700&family=Titan+One&display=swap');
+$bgColor: #a2ac8e;
+$light: #ece0af;
+$brown: #442c1e;
+$darkFont: #637053;
+$white: #fff;
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $bgColor;
+    max-width: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 6rem;
+    background-color: $brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    &__link {
+        font-family: Roboto;
+        color: $light;
+        font-size: 2rem;
+        transition: all .3s;
+        padding: 1rem;
+        border: 1px solid $brown;
+
+        &:hover {
+            color: $darkFont;
+            transition: all .3s;
+            color: $brown;
+            background-color: $light;
+            border: 1px solid #44261e;
+        }
+    }
+
+    &__item+&__item {
+        margin-left: 5rem;
+    }
+}
+
+.container {
+    max-width: 94rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 94rem;
+    width: 100%;
+    height: 56.2rem;
+    background: url(../../assets/img/bg-hero.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__text {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-family: Roboto;
+        color: $darkFont;
+        font-size: 1.4rem;
+    }
+
+    &__title {
+        padding-top: 6rem;
+        font-family: 'Mrs Sheppards', cursive;
+        color: $light;
+        font-size: 6rem;
+    }
+
+    &__subtitle {
+        font-family: 'Titan One', cursive;
+        color: $brown;
+        font-size: 5rem;
+    }
+
+    & span {
+        font-family: 'Titan One', cursive;
+        color: $brown;
+        font-size: 7.5rem;
+    }
+
+
+
+    & a {
+        font-family: Roboto;
+        color: $brown;
+        font-size: 2.5rem;
+        margin-left: 4rem;
+        padding: 1rem;
+        border: 1px solid $bgColor;
+        transition: all .3s;
+
+        &:hover {
+            color: $darkFont;
+            transition: all .3s;
+            color: $brown;
+            background-color: $light;
+            border: 1px solid #44261e;
+            border-radius: 1.5rem;
+        }
+    }
+
+    position: relative;
+}
+
+.type-text {
+
+    width: 30rem;
+    height: 16rem;
+}
+
+.type-1 {
+    width: 25rem;
+    position: absolute;
+    font-family: Roboto;
+    color: $light;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    top: 21.1rem;
+    left: 38.7rem;
+
+}
+
+.time {
+    position: absolute;
+    font-family: 'Space Mono', monospace;
+    color: $brown;
+    font-size: 2rem;
+    top: 27.8rem;
+    left: 73.6rem;
+}
+
+.portfolio-box {
+    background-color: $light;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.portfolio {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 20rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        border: 2px solid $brown;
+        border-radius: 1.5rem;
+        padding: 3rem;
+        transition: all .5s ease;
+    }
+
+    &__title {
+        font-family: Roboto;
+        color: $brown;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    &__subtitle {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: Roboto;
+        color: $darkFont;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    &__text {
+        text-align: justify;
+        font-family: Roboto;
+        color: $brown;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        margin-bottom: 3rem;
+    }
+
+    &__btn a {
+        text-align: justify;
+        font-family: Roboto;
+        color: $brown;
+        background: $light;
+        padding: 1rem 2rem;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        border-radius: 1.5rem;
+        border: 1px solid $brown;
+        text-transform: uppercase;
+        transition: all .3s;
+
+        &:hover {
+            color: $darkFont;
+            transition: all .3s;
+            color: $light;
+            background-color: $brown;
+            border: 1px solid $brown;
+            border-radius: 1.5rem;
+        }
+    }
+
+}

@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Mrs+Sheppards&family=Roboto:wght@300;400;700&family=Space+Mono:wght@700&family=Titan+One&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #FAF9F8;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "ConcertOne";
+  src: url("../../assets/fonts/ConcertOne-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "MrsShep";
+  src: url("../../assets/fonts/MrsSheppards-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "ConcertOne";
+  src: url("../../assets/fonts/TitanOne-Regular.ttf") format("ttf");
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #a2ac8e;
+    max-width: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 6rem;
+    background-color: #442c1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.nav__link {
+    font-family: Roboto;
+    color: #ece0af;
+    font-size: 2rem;
+    transition: all 0.3s;
+    padding: 1rem;
+    border: 1px solid #442c1e;
+}
+
+.nav__link:hover {
+    color: #637053;
+    transition: all 0.3s;
+    color: #442c1e;
+    background-color: #ece0af;
+    border: 1px solid #44261e;
+}
+
+.nav__item + .nav__item {
+    margin-left: 5rem;
+}
+
+.container {
+    max-width: 94rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 94rem;
+    width: 100%;
+    height: 56.2rem;
+    background: url(../../assets/img/bg-hero.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.hero__text {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: Roboto;
+    color: #637053;
+    font-size: 1.4rem;
+}
+
+.hero__title {
+    padding-top: 6rem;
+    font-family: "Mrs Sheppards", cursive;
+    color: #ece0af;
+    font-size: 6rem;
+}
+
+.hero__subtitle {
+    font-family: "Titan One", cursive;
+    color: #442c1e;
+    font-size: 5rem;
+}
+
+.hero span {
+    font-family: "Titan One", cursive;
+    color: #442c1e;
+    font-size: 7.5rem;
+}
+
+.hero a {
+    font-family: Roboto;
+    color: #442c1e;
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    padding: 1rem;
+    border: 1px solid #a2ac8e;
+    transition: all 0.3s;
+}
+
+.hero a:hover {
+    color: #637053;
+    transition: all 0.3s;
+    color: #442c1e;
+    background-color: #ece0af;
+    border: 1px solid #44261e;
+    border-radius: 1.5rem;
+}
+
+.type-text {
+    width: 30rem;
+    height: 16rem;
+}
+
+.type-1 {
+    width: 25rem;
+    position: absolute;
+    font-family: Roboto;
+    color: #ece0af;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    top: 21.1rem;
+    left: 38.7rem;
+}
+
+.time {
+    position: absolute;
+    font-family: "Space Mono", monospace;
+    color: #442c1e;
+    font-size: 2rem;
+    top: 27.8rem;
+    left: 73.6rem;
+}
+
+.portfolio-box {
+    background-color: #ece0af;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio__item {
+    width: 20rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    border: 2px solid #442c1e;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    transition: all 0.5s ease;
+}
+
+.portfolio__title {
+    font-family: Roboto;
+    color: #442c1e;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.portfolio__subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: Roboto;
+    color: #637053;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.portfolio__text {
+    text-align: justify;
+    font-family: Roboto;
+    color: #442c1e;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio__btn a {
+    text-align: justify;
+    font-family: Roboto;
+    color: #442c1e;
+    background: #ece0af;
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #442c1e;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.portfolio__btn a:hover {
+    color: #637053;
+    transition: all 0.3s;
+    color: #ece0af;
+    background-color: #442c1e;
+    border: 1px solid #442c1e;
+    border-radius: 1.5rem;
+}
