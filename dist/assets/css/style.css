@@ -298,6 +298,14 @@ body {
     padding-bottom: 5rem;
 }
 
+.portfolio-box h4 {
+    font-family: "Titan One", cursive;
+    color: #442c1e;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 .portfolio {
     display: flex;
     justify-content: space-between;
@@ -346,7 +354,7 @@ body {
     text-align: justify;
     font-family: Roboto;
     color: #442c1e;
-    background: #ece0af;
+    background: transparent;
     padding: 1rem 2rem;
     font-weight: 400;
     font-size: 1.7rem;
@@ -364,4 +372,61 @@ body {
     background-color: #442c1e;
     border: 1px solid #442c1e;
     border-radius: 1.5rem;
+}
+
+.my-script {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-script h4 {
+    font-family: "Titan One", cursive;
+    color: #442c1e;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.footer {
+    background-color: #442c1e;
+    width: 100%;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+
+.footer__logo a {
+    font-family: "Mrs Sheppards", cursive;
+    color: #ece0af;
+    transition: all 0.5s ease;
+    font-size: 3rem;
+}
+
+.footer__logo a:hover {
+    color: #637053;
+    transition: all 0.5s ease;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social a img {
+    height: 5rem;
+    padding-left: 2rem;
+    filter: sepia(1);
+    transition: all 0.5s ease;
+}
+
+.footer__social a img:hover {
+    filter: sepia(0);
+    transition: all 0.5s ease;
 }

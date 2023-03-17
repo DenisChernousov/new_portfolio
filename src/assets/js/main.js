@@ -23,7 +23,7 @@ window.onload = function () {
 
 let text = `Могу, умею, практикую!
 HTML, CSS, JavaScript, WordPress, 
-React и что-то еще я же всетаки джун, обучусь :) `;
+React и что-то еще - я же все-таки джун, обучусь :) `;
 
 let p = document.querySelector('.type-1');
 let text1 = '';
